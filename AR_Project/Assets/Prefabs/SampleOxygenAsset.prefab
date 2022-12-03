@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 563212240342432710}
   m_Layer: 0
   m_Name: SampleOxygenAsset
-  m_TagString: Untagged
+  m_TagString: Oxygen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,7 +376,7 @@ Animator:
   m_GameObject: {fileID: 563212240342432711}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2c0830c5f464801409fbb42a7587efcb, type: 2}
+  m_Controller: {fileID: 9100000, guid: f6ac6d5d65f1b154abe38decb068bbf5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
