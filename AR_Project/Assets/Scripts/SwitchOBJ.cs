@@ -27,7 +27,7 @@ public class SwitchOBJ : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("a"))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown("a"))
         {
             ThisGOBJ.SetActive(false);
             OtherGOBJ.SetActive(true);

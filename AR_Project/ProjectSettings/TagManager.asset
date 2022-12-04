@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - H20
+  - Oxygen
+  - Hydrogen
+  - Carbon
+  - CO2
   layers:
   - Default
   - TransparentFX
