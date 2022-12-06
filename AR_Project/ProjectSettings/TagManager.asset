@@ -9,6 +9,7 @@ TagManager:
   - Hydrogen
   - Carbon
   - CO2
+  - Methane
   layers:
   - Default
   - TransparentFX
