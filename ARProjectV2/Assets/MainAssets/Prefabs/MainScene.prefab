@@ -144,7 +144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2632753719056517104, guid: a7da1353655d49f4d8d26c0616ac45cc, type: 3}
+  - {fileID: 2100000, guid: 57cdbd6d744f438479f896bfb032a630, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -875,7 +875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 6506243615326113975}
   mHiddenRoot: {fileID: 0}
-  mTargetName: OxygenTrackingImage
+  mTargetName: OxygenTIV3ls_scaled
   mDatasetName: Vuforia/AR_Project.xml
   mCastedBehaviour: {fileID: 6506243615326113975}
   mMeshFilter: {fileID: 0}
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 6506243615746230061}
   mHiddenRoot: {fileID: 0}
-  mTargetName: CarbonTrackingImage
+  mTargetName: CarbonTIV3ls_scaled
   mDatasetName: Vuforia/AR_Project.xml
   mCastedBehaviour: {fileID: 6506243615746230061}
   mMeshFilter: {fileID: 0}
@@ -1433,7 +1433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 6506243616004530323}
   mHiddenRoot: {fileID: 0}
-  mTargetName: HydrogenTrackingImage
+  mTargetName: HydrogenTIV3ls_scaled
   mDatasetName: Vuforia/AR_Project.xml
   mCastedBehaviour: {fileID: 6506243616004530323}
   mMeshFilter: {fileID: 0}
