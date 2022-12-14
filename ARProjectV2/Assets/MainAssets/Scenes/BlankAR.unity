@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,43 +123,69 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &655688978 stripped
+--- !u!1 &392962218 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6506243615326113972, guid: e501981c00a2ce14a81595b0503db7f7,
+  m_CorrespondingSourceObject: {fileID: 6744770001083704330, guid: e501981c00a2ce14a81595b0503db7f7,
     type: 3}
   m_PrefabInstance: {fileID: 6506243615728058344}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &655688981 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6506243615326113975, guid: e501981c00a2ce14a81595b0503db7f7,
-    type: 3}
-  m_PrefabInstance: {fileID: 6506243615728058344}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655688978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &655688982
+--- !u!114 &392962223
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655688978}
+  m_GameObject: {fileID: 392962218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73751ed67b204294a8ba420e68324233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 655688981}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: OxygenTrackingImage
-  mDatasetName: Vuforia/AR_Project.xml
-  mCastedBehaviour: {fileID: 655688981}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
+  ThisGOBJ: {fileID: 392962218}
+  AtomCombo1: Carbon
+  AtomCombo2: Oxygen
+--- !u!1 &1465886584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6744770002547521816, guid: e501981c00a2ce14a81595b0503db7f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6506243615728058344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1465886589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465886584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73751ed67b204294a8ba420e68324233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThisGOBJ: {fileID: 1465886584}
+  AtomCombo1: Hydrogen
+  AtomCombo2: Carbon
+--- !u!1 &1781402833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6744770002229349588, guid: e501981c00a2ce14a81595b0503db7f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6506243615728058344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1781402838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781402833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73751ed67b204294a8ba420e68324233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThisGOBJ: {fileID: 1781402833}
+  AtomCombo1: Hydrogen
+  AtomCombo2: Oxygen
 --- !u!1001 &6506243615728058344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -192,6 +218,11 @@ PrefabInstance:
         type: 3}
       propertyPath: mMeshRenderer
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506243615326113974, guid: e501981c00a2ce14a81595b0503db7f7,
+        type: 3}
+      propertyPath: UsePoseSmoothing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6506243615625201417, guid: e501981c00a2ce14a81595b0503db7f7,
         type: 3}
@@ -253,6 +284,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6506243615746230060, guid: e501981c00a2ce14a81595b0503db7f7,
+        type: 3}
+      propertyPath: UsePoseSmoothing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6506243615746230061, guid: e501981c00a2ce14a81595b0503db7f7,
         type: 3}
       propertyPath: mWidth
@@ -287,6 +323,16 @@ PrefabInstance:
         type: 3}
       propertyPath: mMeshRenderer
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506243616004530322, guid: e501981c00a2ce14a81595b0503db7f7,
+        type: 3}
+      propertyPath: StatusFilter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506243616004530322, guid: e501981c00a2ce14a81595b0503db7f7,
+        type: 3}
+      propertyPath: UsePoseSmoothing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6506243616004530323, guid: e501981c00a2ce14a81595b0503db7f7,
         type: 3}

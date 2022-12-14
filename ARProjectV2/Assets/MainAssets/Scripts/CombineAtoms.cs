@@ -30,4 +30,30 @@ public class CombineAtoms : MonoBehaviour
             }            
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == AtomCombo1)
+        {
+            ThisGOBJ.SetActive(false);
+            NewMoleculeGOBJ.SetActive(true);
+
+            foreach (GameObject AtomOBJ in ToDestroyAtomGOBJ)
+            {
+                AtomOBJ.SetActive(false);
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (NewMoleculeGOBJ.active)
+        {
+            ThisGOBJ.SetActive(false);
+            foreach (GameObject AtomOBJ in ToDestroyAtomGOBJ)
+            {
+                AtomOBJ.SetActive(false);
+            }
+        }
+    }
 }
