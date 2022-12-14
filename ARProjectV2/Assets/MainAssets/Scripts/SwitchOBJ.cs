@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SwitchOBJ : MonoBehaviour
 {
-    public GameObject ThisGOBJ;
-    public GameObject OtherGOBJ;
+    public GameObject[] ThisGOBJ;
+    public GameObject[] OtherGOBJ;
 
     // Use this for initialization
     void Start()
@@ -22,15 +22,27 @@ public class SwitchOBJ : MonoBehaviour
             RaycastHit Hit;
             if (Physics.Raycast(ray, out Hit))
             {
-                ThisGOBJ.SetActive(false);
-                OtherGOBJ.SetActive(true);
+                foreach (GameObject obj in ThisGOBJ)
+                {
+                    obj.SetActive(false);
+                }
+                foreach (GameObject obj in OtherGOBJ)
+                {
+                    obj.SetActive(true);
+                }
             }
         }
 
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown("a"))
         {
-            ThisGOBJ.SetActive(false);
-            OtherGOBJ.SetActive(true);
+            foreach (GameObject obj in ThisGOBJ)
+            {
+                obj.SetActive(false);
+            }
+            foreach (GameObject obj in OtherGOBJ)
+            {
+                obj.SetActive(true);
+            }
         }
     }
 }

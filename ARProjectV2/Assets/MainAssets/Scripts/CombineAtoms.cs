@@ -26,7 +26,7 @@ public class CombineAtoms : MonoBehaviour
 
             foreach(GameObject AtomOBJ in ToDestroyAtomGOBJ)
             {
-                AtomOBJ.SetActive(false);
+                Destroy(AtomOBJ);
             }            
         }
     }
